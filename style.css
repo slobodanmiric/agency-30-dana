@@ -13,3 +13,32 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
+/*********************
+nav
+*********************/
+.navbar {
+    border-top: 5px solid var(--orange);
+    background: var(--black);
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand {
+    background: var(--orange);
+    padding: 15px 40px;
+    color: var(--bela);
+    text-shadow: 0 0 2px var(--black);
+    transition: var(--transition);
+}
+.navbar-brand:hover {
+    color: var(--black);
+    text-shadow: 0 0 2px var(--bela);
+}
+.navbar .nav-link {
+    color: var(--orange);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+.navbar .nav-link:hover {
+    color: var(--moka);
+}
