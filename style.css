@@ -42,3 +42,35 @@ nav
 .navbar .nav-link:hover {
     color: var(--moka);
 }
+/*********************
+banner
+*********************/
+#banner {
+    background-image: url(img/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+#banner .row {
+    height: 80vh;
+}
+#banner h2 {
+    color: var(--orange);
+    margin-bottom: 30px;
+}
+.bannerBtn {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 2px solid var(--orange);
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--bela);
+    margin: 0 10px;
+    transition: var(--transition);
+}
+.bannerBtn:hover {
+    text-decoration: none;
+    background: var(--orange);
+    color: var(--black);
+}
