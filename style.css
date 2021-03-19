@@ -7,6 +7,9 @@
     --black: #000;
     --transition: .4s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
