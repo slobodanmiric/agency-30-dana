@@ -57,7 +57,7 @@ nav
 banner
 *********************/
 #banner {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,.99)), url(img/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0,.1), rgba(0, 0, 0,.99)), url(img/banner.jpg);
     height: 80vh;
     background-position: center;
     background-size: cover;
@@ -229,4 +229,138 @@ about
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f0a4";
+}
+/*********************
+projects
+*********************/
+#projects {
+    padding-top: 50px;
+}
+#projects .col-md-3 {
+    padding: 0 !important;
+}
+#projects .imgContainer {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7));
+    overflow: hidden;
+}
+#projects .imgContainer img:hover {
+    opacity: .7;
+    cursor: pointer;
+    transition: var(--transition);
+}
+#projects .imgIcons {
+    position: absolute;
+    bottom: -10rem;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+    width: 100%;
+    transition-duration: 1s;
+    text-align: center;
+    padding: 20px 0;
+}
+#projects .imgContainer:hover .imgIcons {
+    bottom: 0;
+}
+#projects i {
+    color: var(--orange);
+    font-size: 35px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+#projects i:hover {
+    color: var(--siva);
+}
+/*********************
+people
+*********************/
+#people img {
+    width: 80%;
+    border-radius: 50%;
+    margin: -100px auto 0 auto;
+}
+#people .row:nth-child(2) {
+    margin-top: 100px;
+}
+#people hr {
+    background: var(--orange);
+    border: none;
+    height: 1px;
+}
+#people i {
+    color: var(--orange);
+    font-size: 30px;
+    margin: 0 5px;
+    transition: var(--transition);
+}
+#people i:hover {
+    color: var(--siva);
+}
+/*********************
+skills
+*********************/
+#skills {
+    background-image: linear-gradient(rgba(255, 138, 91,.7), rgba(255, 138, 91,.7)), url(img/progress.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 100px 0 100px 0;
+}
+.progress-bar {
+    background-color: black;
+}
+/*********************
+pricing
+*********************/
+#pricing .card {
+    border-radius: 0;
+}
+#pricing .card-title {
+    padding-top: 20px;
+}
+.priceNum {
+    position: relative;
+    background: var(--moka);
+}
+.money {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+}
+.moneyNum {
+    font-size: 60px;
+}
+.moneyEnd {
+    font-size: 18px;
+}
+#pricing  .list-group li:first-child {
+    padding-top: 50px;
+}
+#pricing  .list-group .list-group-item {
+    font-size: 15px;
+}
+#pricing .list-group {
+    border-radius: 0 !important;
+}
+#pricing .btn {
+    background: var(--orange);
+    border-radius: 0;
+}
+#pricing .btn:hover {
+    background: var(--siva);
+    color: var(--bela);
+}
+#pricing .action {
+    background: var(--orange);
+}
+/*********************
+footer
+*********************/
+footer {
+    background: var(--black);
+    color: var(--bela);
+}
+footer i, footer h2 {
+    color: var(--orange);
 }
